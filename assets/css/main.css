@@ -33,6 +33,10 @@ body {
 	line-height: 1;
 }
 
+.headshot {
+	max-width: 500px;
+}
+
 ol, ul {
 	list-style: none;
 }
