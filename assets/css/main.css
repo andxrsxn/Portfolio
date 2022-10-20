@@ -34,7 +34,7 @@ body {
 }
 
 .headshot {
-	max-width: 500px;
+	max-width: 400px;
 }
 
 ol, ul {
@@ -200,7 +200,7 @@ input, select, textarea {
 		}
 
 	h1 {
-		font-size: 4rem;
+		font-size: 3rem;
 		line-height: 1.1;
 		margin: 0 0 2rem 0;
 	}
