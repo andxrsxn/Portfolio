@@ -56,6 +56,43 @@
 									</a></h2>
 									<p>These are some projects created by me and my teams.</p>
 								</header>
+
+								<div class="clock">
+									<div class="hour">
+										<div class="hr" id="hr"></div>
+									</div>
+									<div class="min">
+										<div class="mn" id="mn"></div>
+									</div>
+									<div class="sec">
+										<div class="sc" id="sc"></div>
+									</div>
+								</div> 
+								
+								<script type="text/javascript">
+									const deg = 6;
+									const hr = document.querySelector('#hr');
+									const mn = document.querySelector('#mn');
+									const sc = document.querySelector('#sc');
+							
+									setInterval(() => {
+									   
+									let day = new Date();
+									let hh = day.getHours() * 30;
+									let mm = day.getMinutes() * deg;
+									let ss = day.getSeconds() * deg;
+							
+									hr.style.transform = `rotateZ(${(hh)+(mm/12)}deg)`;
+									mn.style.transform = `rotateZ(${mm}deg)`;
+									sc.style.transform = `rotateZ(${ss}deg)`;
+									})
+							
+								  
+								</script> 
+
+
+
+
 								<!-- <a href="#" class="image main"><img src="images/HUD crypto faerie.mp4" alt="" /></a>
 								<!-- <ul class="actions special">
 									<li><a href="#" class="button large">Full Story</a></li>
